@@ -599,9 +599,7 @@ form .send-btn2:hover{
             --h1-font: 3rem;
             --h2-font: 2rem
         }
-        .main-content p{
-            width: 80%;
-        }
+        
         .about-img img{
             text-align: center;
             width: 100%;
@@ -613,7 +611,7 @@ form .send-btn2:hover{
         }
         .main-content h4{
             font-size: 1.6rem;
-            margin-top: 20%;
+            margin-top: 50%;
         }
 
         .exp-area{
