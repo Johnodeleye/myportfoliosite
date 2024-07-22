@@ -18,7 +18,7 @@ window.onscroll  = () => {
 };
 
 function blogAlert() {
-    alert("Thank you for checking in for our blog!, Our Blog is Coming soon!");
+    alert("HubPost Tech Community - Coming Soon! We're building a vibrant community for tech enthusiasts, developers, and innovators. Stay tuned for our launch! Please check back soon.");
 }
 
 function contactAlert() {
