@@ -99,6 +99,55 @@ option:hover {
 }
 
 
+.faq-container {
+    background-color: var(--bg-color);
+    padding: 20px;
+}
+
+.faq-item {
+    background-color: var(--second-bg-color);
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.faq-question h4 {
+    margin-top: 0;
+}
+
+.plus-icon {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+
+.faq-answer {
+    max-height: 0;
+    padding-top: 0px;
+    color: var(--other-color);
+    opacity: 0;
+    transition: max-height 0.5s, opacity 0.5s;
+    overflow: hidden;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px; /* Set a max height that's higher than the actual height */
+    opacity: 1;
+}
+
+a{
+    color: greenyellow;
+    text-decoration: underline;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     h1 {

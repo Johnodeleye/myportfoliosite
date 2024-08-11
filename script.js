@@ -52,6 +52,15 @@ window.addEventListener('load', function() {
 });
 
 function HubAlert() {
-    alert("Thank you for your feedback and subscription! You will now be redirected to follow the founder of HubPost on Facebook for the latest updates.");
-    window.location.href = "https://www.facebook.com/thefuturefounder"; // replace with the actual Facebook page URL
+    alert("Thank you for your feedback and subscription! You will now be redirected to the confirmation page. Remember to come back and follow us on social media for the latest updates and insights from HubPost!");
 }
+
+// Accordion functionality
+
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach((item) => {
+    item.addEventListener('click', () => {
+        item.classList.toggle('active');
+    });
+});
