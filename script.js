@@ -50,3 +50,8 @@ window.addEventListener('load', function() {
         }
     }, 40); // update progress every 40ms
 });
+
+function HubAlert() {
+    alert("Thank you for your feedback and subscription! You will now be redirected to follow the founder of HubPost on Facebook for the latest updates.");
+    window.location.href = "https://www.facebook.com/thefuturefounder"; // replace with the actual Facebook page URL
+}
