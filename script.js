@@ -24,3 +24,29 @@ function blogAlert() {
 function contactAlert() {
     alert("Your Message has been recevied you will get a mail shortly!")
 }
+// Loader
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        document.querySelector('.preloader').style.display = 'none';
+    }, 5000); // 5000ms = 5 seconds
+});
+
+//A progress bar functionality
+
+window.addEventListener('load', function() {
+    const progress = document.getElementById('progress');
+    const percentage = document.getElementById('percentage');
+    let count = 0;
+    const interval = setInterval(() => {
+        if (count <= 100) {
+            progress.style.width = count + '%';
+            percentage.textContent = count + '%';
+            count++;
+        } else {
+            clearInterval(interval);
+            setTimeout(() => {
+                document.querySelector('.preloader').style.display = 'none';
+            }, 500); // wait 0.5s before hiding the preloader
+        }
+    }, 40); // update progress every 40ms
+});
